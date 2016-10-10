@@ -1,13 +1,13 @@
-# $OpenBSD: Makefile,v 1.13 2014/10/11 19:54:47 jeremy Exp $
+# $OpenBSD$
 
 COMMENT =	library to access web resources via HTTP
 
-DISTNAME =	rest-client-2.0.0.rc1
+DISTNAME =	rest-client-2.0.0
 CATEGORIES =	www
 
 HOMEPAGE =	https://github.com/nahi/httpclient
 
-# same as Ruby
+# MIT
 PERMIT_PACKAGE_CDROM = Yes
 
 MODULES =		lang/ruby
@@ -15,9 +15,8 @@ MODULES =		lang/ruby
 CONFIGURE_STYLE =	ruby gem
 
 BUILD_DEPENDS +=	${RUN_DEPENDS}
-RUN_DEPENDS +=		devel/ruby-ffi,${MODRUBY_FLAVOR} \
-			mail/ruby-mime-types,${MODRUBY_FLAVOR} \
-			net/ruby-netrc,${MODRUBY_FLAVOR} \
-			www/ruby-http-cookie,${MODRUBY_FLAVOR}
+RUN_DEPENDS +=		mail/ruby-mime-types,${MODRUBY_FLAVOR}>=1.16,<4.0 \
+			net/ruby-netrc,${MODRUBY_FLAVOR}>=0.8,<1.0 \
+			www/ruby-http-cookie,${MODRUBY_FLAVOR}>=1.0.0,<2.0
 
 .include <bsd.port.mk>

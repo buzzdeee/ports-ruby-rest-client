@@ -10,7 +10,7 @@ ${GEM_LIB}/gems/${DISTNAME}/.travis.yml
 ${GEM_LIB}/gems/${DISTNAME}/AUTHORS
 ${GEM_LIB}/gems/${DISTNAME}/Gemfile
 ${GEM_LIB}/gems/${DISTNAME}/LICENSE
-${GEM_LIB}/gems/${DISTNAME}/README.rdoc
+${GEM_LIB}/gems/${DISTNAME}/README.md
 ${GEM_LIB}/gems/${DISTNAME}/Rakefile
 ${GEM_LIB}/gems/${DISTNAME}/bin/
 ${GEM_LIB}/gems/${DISTNAME}/bin/restclient
@@ -22,6 +22,7 @@ ${GEM_LIB}/gems/${DISTNAME}/lib/restclient/
 ${GEM_LIB}/gems/${DISTNAME}/lib/restclient.rb
 ${GEM_LIB}/gems/${DISTNAME}/lib/restclient/abstract_response.rb
 ${GEM_LIB}/gems/${DISTNAME}/lib/restclient/exceptions.rb
+${GEM_LIB}/gems/${DISTNAME}/lib/restclient/params_array.rb
 ${GEM_LIB}/gems/${DISTNAME}/lib/restclient/payload.rb
 ${GEM_LIB}/gems/${DISTNAME}/lib/restclient/platform.rb
 ${GEM_LIB}/gems/${DISTNAME}/lib/restclient/raw_response.rb
@@ -61,6 +62,7 @@ ${GEM_LIB}/gems/${DISTNAME}/spec/unit/_lib.rb
 ${GEM_LIB}/gems/${DISTNAME}/spec/unit/abstract_response_spec.rb
 ${GEM_LIB}/gems/${DISTNAME}/spec/unit/exceptions_spec.rb
 ${GEM_LIB}/gems/${DISTNAME}/spec/unit/master_shake.jpg
+${GEM_LIB}/gems/${DISTNAME}/spec/unit/params_array_spec.rb
 ${GEM_LIB}/gems/${DISTNAME}/spec/unit/payload_spec.rb
 ${GEM_LIB}/gems/${DISTNAME}/spec/unit/raw_response_spec.rb
 ${GEM_LIB}/gems/${DISTNAME}/spec/unit/request2_spec.rb
